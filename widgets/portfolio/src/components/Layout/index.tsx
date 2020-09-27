@@ -18,7 +18,7 @@ export class Layout extends React.Component<LayoutProps, {}> {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12 text-center mt-5 mb-5">
-                                <h1 >Knight Coder LLC Coming Soon!</h1>
+                                <h1 >Knight Coder LLC | Portfolio</h1>
                             </div>
                             <div className="col-md-12 text-center">
                                 { children }
