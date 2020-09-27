@@ -1,6 +1,9 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
+import { Layout } from './components/Layout';
+
+import '../../../assets/css/bootstrap.min.css';
 
 ReactDom.render(
-    <div>Hello World</div>, document.getElementById('root')
+    <Layout />, document.getElementById('root')
 );
