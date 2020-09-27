@@ -3,3 +3,29 @@ body { background: #000000;font-family: 'Crimson Text', serif;}
 .line-item { justify-self: center; }
 h1 { color: white;}
 img {max-width:900px;max-height:900px;}
+
+/* pulse animation */
+.title.white {
+    /* background: white; */
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+    padding: 10px;
+    animation: pulse-white 2s infinite;
+    animation-iteration-count: .5;
+}
+
+@keyframes pulse-white {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
