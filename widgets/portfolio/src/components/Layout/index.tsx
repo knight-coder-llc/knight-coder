@@ -1,5 +1,7 @@
 import * as React from 'react';
+
 import { LayoutProps } from './interface';
+import { Header } from '../Header';
 import { Navigator } from '../Navigation';
 
 export class Layout extends React.Component<LayoutProps, {}> {
@@ -12,7 +14,8 @@ export class Layout extends React.Component<LayoutProps, {}> {
         let { children } = this.props;
         return (
             <>
-            <Navigator links={['Home', 'About', 'Portfolio']} collapsed={false} />
+            <Header />
+            <Navigator links={['Home', 'About', 'Portfolio']} />
             <div className="grid-layout">
                 <div className="line-item">
                     <div className="container">

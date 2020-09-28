@@ -1,5 +1,6 @@
 body { background: #000000;font-family: 'Crimson Text', serif;}
-.grid-layout { display: grid; align-content: center; }
+header { background-image: url('../src/images/computer.jpg'); min-height: 30vh; background-position: center;background-size:cover;}
+.grid-layout { display: grid; align-content: center;}
 .line-item { justify-self: center; }
 h1 { color: white;}
 img {max-width:900px;max-height:900px;}

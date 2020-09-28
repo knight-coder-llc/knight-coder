@@ -10,6 +10,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     devServer: {
+        historyApiFallback: true,
         port: 3000
     },
     plugins: [
@@ -49,7 +50,15 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: [MiniCssExtractPlugin.loader, 'css-loader']
-            }
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                  {
+                    loader: 'file-loader',
+                  },
+                ],
+            },
         ]
     },
     stats: 'errors-only'
