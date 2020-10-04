@@ -18,10 +18,11 @@ body:active div::after {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0.2;
+  opacity: 0.4;
   -webkit-transform-origin: top;
   transform-origin: top;
   transition: all 5s linear 0s;
+  z-index: -1
 }
 
 .purple {

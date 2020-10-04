@@ -4,7 +4,8 @@ header { background-image: url('../src/images/computer-12x15.png'); min-height: 
 .line-item { justify-self: center; }
 h1 { color: white;}
 /* img {max-width:900px;max-height:900px;} */
-
+.bg-dark {background-color: black!important;font-size: x-large;}
+ 
 /* pulse animation */
 .title.white {
     /* background: white; */
