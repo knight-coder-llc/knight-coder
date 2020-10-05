@@ -3,6 +3,7 @@ import * as React from 'react';
 import { LayoutProps } from './interface';
 import { Header } from '../Header';
 import { Navigator } from '../Navigation';
+import { Footer } from '../Navigation/footer';
 
 export class Layout extends React.Component<LayoutProps, {}> {
     constructor(props: any) {
@@ -25,6 +26,7 @@ export class Layout extends React.Component<LayoutProps, {}> {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </>
         )
     }

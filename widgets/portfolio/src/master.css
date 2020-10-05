@@ -64,3 +64,6 @@ h1 { color: white;}
     transform: translate3d(0px, -5.5px, 0px);
     z-index: 99
 }
+
+footer {background: black;}
+.footer-copyright {color:white;}

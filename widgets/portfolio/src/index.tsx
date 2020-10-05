@@ -13,7 +13,7 @@ ReactDom.render(
             <Layout>
                 <Switch>
                     <Route exact path="/" >
-                        <HomePage title='Knight Coder LLC | Portfolio' imgSrc="../src/images/brian1.jpg" />
+                        <HomePage title='Knight Coder LLC' imgSrc="../src/images/brian1.jpg" />
                     </Route>
                     <Route path="/features" >
                         {/* <h1 >featured page</h1> */}
