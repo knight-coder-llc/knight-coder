@@ -48,11 +48,12 @@ module.exports = {
                 enforce: "pre"
             },
             {
-                test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader']
+                test: /\.(css|scss)$/i,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+                // use: [MiniCssExtractPlugin.loader,'style-loader', 'css-loader', 'sass-loader']
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
+                test: /\.(png|jpe?g|gif|woff|ttf|svg|eot)$/i,
                 use: [
                   {
                     loader: 'file-loader',

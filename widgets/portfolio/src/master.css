@@ -1,4 +1,4 @@
-body { background: radial-gradient(circle, #24246e, #06051f);font-family: 'Crimson Text', serif;}
+body { background: radial-gradient(circle, #24246e, #06051f);font-family: 'Crimson Text', serif;color: white;}
 header { background-image: url('../src/images/computer-12x15.png'); min-height: 10vh; background-position: center;background-size:cover;}
 .grid-layout { display: grid; align-content: center;}
 .line-item { justify-self: center; }
@@ -67,3 +67,10 @@ h1 { color: white;}
 
 footer {background: black;}
 .footer-copyright {color:white;}
+
+.slick-slide {color:white;}
+.slick-dots li button:before  {color:white}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: green;
+}
