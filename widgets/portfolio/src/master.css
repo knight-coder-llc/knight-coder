@@ -5,7 +5,7 @@ header { background-image: url('../src/images/computer-12x15.png'); min-height: 
 h1 { color: white;}
 /* img {max-width:900px;max-height:900px;} */
 .bg-dark {background-color: black!important;font-size: x-large;}
- 
+ .git-profile {font-size: large;}
 /* pulse animation */
 .title.white {
     /* background: white; */
@@ -74,3 +74,10 @@ footer {background: black;}
     opacity: .75;
     color: green;
 }
+/* .slick-slide img {max-width: 250px; max-height: 150px;} */
+* {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  .slick-slider {max-width: 100vw;}
