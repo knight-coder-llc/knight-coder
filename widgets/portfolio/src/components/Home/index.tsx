@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { ProfileSlider } from '../Carousel';
 import { HomePageProps } from './interface';
+import { ChatBot } from '../Chatbot';
 
 export class HomePage extends React.Component<HomePageProps, {}> {
     constructor(props: HomePageProps) {
@@ -36,6 +37,8 @@ export class HomePage extends React.Component<HomePageProps, {}> {
                     </div> 
                 </div>
                 <ProfileSlider />
+
+                {/* <ChatBot pid={process.env.FACEBOOK_PAGE_ID} aid={process.env.FACEBOOK_APP_ID}  /> */}
             </div>
         )
     }

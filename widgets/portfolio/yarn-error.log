@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add --dev tff-loader
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add --dev @types/react-messenger-customer-chat
 
 PATH: 
   C:\Users\Notorious-V\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Notorious-V\bin;C:\Python38;C:\Python38\Scripts;C:\Program Files (x86)\NetSarang\Xshell 6;C:\Program Files\Microsoft MPI\Bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft VS Code\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Python38;C:\Python38\Scripts;C:\Users\Notorious-V\AppData\Local\Microsoft\WindowsApps;C:\Users\Notorious-V\AppData\Local\GitHubDesktop\bin;C:\Users\Notorious-V\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Notorious-V\AppData\Roaming\Composer\vendor\bin;C:\xampp\mysql\bin;C:\Users\Notorious-V\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Notorious-V\AppData\Local\Yarn\bin;C:\Users\Notorious-V\AppData\Roaming\npm;C:\Program Files\apache-maven-3.6.2\bin;C:\tools\dart-sdk\bin;C:\Users\Notorious-V\AppData\Roaming\Pub\Cache\bin;C:\Users\Notorious-V\.dotnet\tools;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/tff-loader: Not found
+  Error: https://registry.yarnpkg.com/@types%2freact-messenger-customer-chat: Not found
       at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66035:18)
       at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140564:22)
       at Request.emit (events.js:210:5)
@@ -38,6 +38,7 @@ npm manifest:
       "react": "^16.13.1",
       "react-bootstrap": "^1.3.0",
       "react-dom": "^16.13.1",
+      "react-messenger-customer-chat": "^0.8.0",
       "react-router-dom": "^5.2.0",
       "react-transition-group": "^4.4.1",
       "slick-carousel": "^1.8.1"
@@ -5082,7 +5083,7 @@ Lockfile:
       react-is "^16.3.2"
       warning "^4.0.0"
   
-  prop-types@^15.6.2, prop-types@^15.7.2:
+  prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
     version "15.7.2"
     resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
     integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -5272,6 +5273,13 @@ Lockfile:
     version "3.0.4"
     resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
     integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+  
+  react-messenger-customer-chat@^0.8.0:
+    version "0.8.0"
+    resolved "https://registry.yarnpkg.com/react-messenger-customer-chat/-/react-messenger-customer-chat-0.8.0.tgz#c0696af9f71d5804a1b1149ae67d672802dee15d"
+    integrity sha512-7HItF+2nElXCBLi1q5eccgE9X4P86BmjmzF5nBcok+hJNWVjdKJTdWxl9VZTQnjkp3GHB7WwTwN2l3d/RKmFuQ==
+    dependencies:
+      prop-types "^15.6.0"
   
   react-overlays@^4.1.0:
     version "4.1.0"

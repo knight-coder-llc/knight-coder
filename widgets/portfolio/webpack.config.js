@@ -9,6 +9,9 @@ module.exports = {
         path: path.join(__dirname,'..','..','/assets','/js','/compiled','/typesportfolio'),
         filename: 'bundle.js'
     },
+    node: {
+        fs: "empty"
+     },
     devServer: {
         historyApiFallback: true,
         port: 3000
@@ -53,7 +56,7 @@ module.exports = {
                 // use: [MiniCssExtractPlugin.loader,'style-loader', 'css-loader', 'sass-loader']
             },
             {
-                test: /\.(png|jpe?g|gif|woff|ttf|svg|eot)$/i,
+                test: /\.(png|jpe?g|gif|woff|ttf|svg|eot|env)$/i,
                 use: [
                   {
                     loader: 'file-loader',

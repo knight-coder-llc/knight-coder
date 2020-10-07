@@ -3,10 +3,13 @@ import * as ReactDom from 'react-dom';
 import { BrowserRouter, HashRouter, Switch, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { HomePage } from './components/Home';
+import * as dotenv from 'dotenv';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './master.css';
 import './style.css';
+
+dotenv.config();
 
 ReactDom.render(
         <BrowserRouter >
