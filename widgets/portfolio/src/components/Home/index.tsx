@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { ProfileSlider } from '../Carousel';
 import { HomePageProps } from './interface';
+import { Contact } from '../Contact';
 import { ChatBot } from '../Chatbot';
 
 export class HomePage extends React.Component<HomePageProps, {}> {
@@ -20,6 +21,7 @@ export class HomePage extends React.Component<HomePageProps, {}> {
                     </picture>
                     <h2 className="text-center ">Brian Kilburn - Owner</h2>
                 </div>
+                <Contact />
                 <div className="mt-5">
                 <div className="d-flex" id="background-anim">
                         <div className="purple"></div>

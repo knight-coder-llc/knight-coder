@@ -57,16 +57,16 @@ export class ProfileSlider extends React.Component<CarouselProps, {}> {
                         <img className="mx-auto img-responsive" src="../../src/images/cookies.png" width={250} height={150}/>
                     </div>
                     <div className="mb-sm-3">
-                        <h3><a className="text-white" href="https://github.com/knight-coder-llc/AI-Vehicle-Calculator">AI Price Estimator</a></h3>
+                        <h3><a className="text-white" href="https://github.com/knight-coder-llc/AI-Vehicle-Calculator">Price Estimator</a></h3>
                         <img className="mx-auto rounded-circle img-responsive" src="../../src/images/ai-cars.png" width={150} height={150}/>
                     </div>
                     <div className="mb-sm-3">
                         <h3><a className="text-white" href="https://github.com/knight-coder-llc/sms-spam-filter">SMS Spam Filter</a></h3>
-                        <img className="mx-auto img-responsive" src="../../src/images/cookies.png" width={250} height={150}/>
+                        <img className="mx-auto img-responsive" src="../../src/images/open-email.png" width={160} height={150}/>
                     </div>
                     <div className="mb-sm-3">
                         <h3><a className="text-white" href="https://github.com/knight-coder-llc/Meal_Planner">Meal Planner</a></h3>
-                        <img className="mx-auto img-responsive" src="../../src/images/cookies.png" width={250} height={150}/>
+                        <img className="mx-auto img-responsive" src="../../src/images/porkchops.jpg" width={250} height={150}/>
                     </div>
                     <div className="mb-sm-3">
                         <h3><a className="text-white" href="https://github.com/knight-coder-llc/my_pygame_projects">Deep Space</a></h3>
@@ -74,7 +74,7 @@ export class ProfileSlider extends React.Component<CarouselProps, {}> {
                     </div>
                     <div className="mb-sm-3">
                         <h3><a className="text-white" href="https://github.com/knight-coder-llc/knight-coder">Knight Coder Profile</a></h3>
-                        <img className="mx-auto img-responsive" src="../../src/images/cookies.png" width={250} height={150}/>
+                        <img className="mx-auto img-responsive" src="../../src/images/logo_transparent.png" width={150} height={150}/>
                     </div>
                     
                 </Slider>
