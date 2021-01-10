@@ -18,7 +18,7 @@ export class HomePage extends React.Component<HomePageProps, {}> {
                         <img className="rounded-circle border-white" src={this.props.imgSrc} alt="Brian Kilburn" width='250'
                             height='250' />
                     </picture>
-                    <h2 className="text-center ">Brian Kilburn</h2>
+                    <h2 className="text-center ">Brian Kilburn - Owner</h2>
                 </div>
                 <div className="mt-5">
                 <div className="d-flex" id="background-anim">
