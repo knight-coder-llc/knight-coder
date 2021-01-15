@@ -1,6 +1,10 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
 const path = require('path');
+const DotEnv = require('dotenv').config({
+    path: path.join(__dirname, '.env')
+});
 
 module.exports = {
     entry: ['./src/index.tsx'],
@@ -21,7 +25,10 @@ module.exports = {
             template: "./static/index.html",
             filename: "index.html"
         }),
-        new MiniCssExtractPlugin()
+        new webpack.DefinePlugin({
+            "process.env": DotEnv.parsed
+        }),
+        new MiniCssExtractPlugin(),
     ],
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
@@ -51,8 +58,9 @@ module.exports = {
                 enforce: "pre"
             },
             {
-                test: /\.(css|scss)$/i,
-                use: ['style-loader', 'css-loader', 'sass-loader']
+                test: /\.(css)$/i,
+                use: ['style-loader','css-loader']
+                // use: ['style-loader', 'css-loader', 'sass-loader']
                 // use: [MiniCssExtractPlugin.loader,'style-loader', 'css-loader', 'sass-loader']
             },
             {
