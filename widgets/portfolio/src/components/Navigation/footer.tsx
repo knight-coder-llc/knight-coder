@@ -31,7 +31,7 @@ export class Footer extends React.Component<FooterProps> {
                         </div>
                     </div>
                 </div>
-                <div className="footer-copyright text-center py-3">© 2020 Copyright 
+                <div className="footer-copyright text-center py-3">© 2021 Copyright 
                     <a href="http://knight-coder.com"> Knight Coder LLC.</a>
                 </div>
             </footer>
