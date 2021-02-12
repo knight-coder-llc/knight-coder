@@ -7,7 +7,7 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-
+import { ContactForm } from '../ContactForm';
 
 export const Contact = (props: ContactProps) =>  {
 
@@ -55,8 +55,9 @@ export const Contact = (props: ContactProps) =>  {
             >
                 <Fade in={open}>
                     <div className={classes.paper}>
-                        <h2 id="transition-modal-title">Transition modal</h2>
-                        <p id="transition-modal-description">react-transition-group animates me.</p>
+                        <h2 id="transition-modal-title" style={{textAlign: 'center'}}>Contact</h2>
+                        {/* <p id="transition-modal-description">react-transition-group animates me.</p> */}
+                        <ContactForm />
                     </div>
                 </Fade>
             </Modal>
