@@ -1,22 +1,20 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
 const webpack = require('webpack');
 const path = require('path');
-const DotEnv = require('dotenv').config({
-    path: path.join(__dirname, '.env')
-});
 
 module.exports = {
     entry: ['./src/index.tsx'],
     output: {
         path: path.resolve(__dirname, './build'),
-        // path: path.join(__dirname,'..','..','/assets','/js','/compiled','/typesportfolio'),
         filename: 'bundle.js'
     },
     node: {
         fs: "empty"
      },
     devServer: {
+        inline: false,
         historyApiFallback: true,
         port: 3000
     },
@@ -25,9 +23,7 @@ module.exports = {
             template: "./static/index.html",
             filename: "index.html"
         }),
-        new webpack.DefinePlugin({
-            "process.env": DotEnv.parsed
-        }),
+        new Dotenv(),
         new MiniCssExtractPlugin(),
     ],
     resolve: {
@@ -39,39 +35,30 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader"
-                }
+                use: "babel-loader"
             },
             {
                 test: /\.ts(x?)$/,
                 exclude: /node_modules/,
-                use: [
-                  {
-                    loader: "ts-loader"
-                  }
-                ]
+                use: "ts-loader"
             },
             {
                 test: /\.(js|jsx)$/,
-                use: ["source-map-loader"],
+                use: "source-map-loader",
                 enforce: "pre"
             },
             {
                 test: /\.(css)$/i,
                 use: ['style-loader','css-loader']
-                // use: ['style-loader', 'css-loader', 'sass-loader']
-                // use: [MiniCssExtractPlugin.loader,'style-loader', 'css-loader', 'sass-loader']
             },
             {
                 test: /\.(png|jpe?g|gif|woff|ttf|svg|eot|env)$/i,
-                use: [
-                  {
-                    loader: 'file-loader',
-                  },
-                ],
+                use: 'file-loader',
             },
         ]
     },
-    stats: 'errors-only'
+    stats: 'errors-only',
+    node: {
+        global: false,
+    },
 };
