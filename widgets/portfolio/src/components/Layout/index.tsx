@@ -3,7 +3,7 @@ import { LayoutProps } from './interface';
 import { Header } from '../Header';
 import { Navigator } from '../Navigation';
 import { Footer } from '../Navigation/footer';
-
+import { AnimatePresence } from 'framer-motion';
 export class Layout extends React.Component<LayoutProps, {}> {
     constructor(props: any) {
         super(props)
@@ -16,11 +16,7 @@ export class Layout extends React.Component<LayoutProps, {}> {
             <>
                 <Header />
                 <Navigator links={['Home', 'About', 'Portfolio']} />
-                <div className="grid-layout">
-                    <div className="line-item">
-                        { children }  
-                    </div>
-                </div>
+                    { children }     
                 <Footer />
             </>
         )
