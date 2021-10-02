@@ -1,0 +1,102 @@
+body { background: radial-gradient(circle, #24246e, #06051f);font-family: 'Crimson Text', serif;color: white; font-size: 1.75em; line-height: 1.4;}
+header { background-image: url('../src/images/computer-12x15.png'); min-height: 10vh; background-position: center;background-size:cover;}
+.grid-layout { display: grid; align-content: center;}
+.line-item { justify-self: center; }
+h1 { color: white;}
+/* img {max-width:900px;max-height:900px;} */
+.bg-dark {background-color: black!important;font-size: x-large;}
+ .git-profile {font-size: large;}
+/* pulse animation */
+.title.white {
+    /* background: white; */
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
+    padding: 10px;
+    animation: pulse-white 2s infinite;
+    animation-iteration-count: .5;
+}
+.hero-container h2 {color:white;}
+#home-page p {
+    color:white;
+    text-align: left;
+    /* font-size: x-large; */
+}
+@keyframes pulse-white {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+.jarallax-container-0 {
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    z-index: -100;
+}
+
+.hero-img {
+    object-fit: cover;
+    object-position: 50% 50%; 
+    max-width: none; 
+    position: top; 
+    /* top: 0px;  */
+    left: 0px; 
+    /* width: 1349px; 
+    height: 610px;  */
+    overflow: hidden; 
+    pointer-events: none; 
+    transform-style: preserve-3d; 
+    backface-visibility: hidden; 
+    will-change: transform, opacity; 
+    margin-top: -6.5px; 
+    transform: translate3d(0px, -5.5px, 0px);
+    z-index: 99
+}
+
+footer {background: black;}
+.footer-copyright {color:white;}
+
+.slick-slide {color:white;}
+.slick-dots li button:before  {color:white}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: green;
+}
+/* .slick-slide img {max-width: 250px; max-height: 150px;} */
+* {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  .slick-slider {max-width: 100vw;}
+
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  blockquote p {
+    display: inline;
+  }
