@@ -9,6 +9,9 @@ import BusinessSharpIcon from '@material-ui/icons/BusinessSharp';
 import ClearSharpIcon from '@material-ui/icons/ClearSharp';
 import HighlightOffSharpIcon from '@material-ui/icons/HighlightOffSharp';
 
+import upselon from '../../images/upselon.jpg';
+import bs from '../../images/bs.jpg';
+
 export class HomePage extends React.Component<HomePageProps, {}> {
     constructor(props: HomePageProps) {
         super(props)
@@ -112,7 +115,7 @@ export class HomePage extends React.Component<HomePageProps, {}> {
                         <img src="https://via.placeholder.com/435.png/000/fff C/O https://placeholder.com/ " />
                     </Col>
                     <Col lg={6} className="mt-5 d-flex align-items-center"> 
-                        <span>After investing seven years earning his degree combined with on the job experience Brian knows how to build a robust application that can bring results, he excels in his ability to learn new technology when it is necessary to accomplish the task at hand, and stands behind the quality of his work.</span>
+                        <span>Brian knows how to build a robust application that can bring results, he excels in his ability to learn new technology when it is necessary to accomplish the task at hand, and stands behind the quality of his work.</span>
                     </Col>
                 </Row>
                 <Row className="mt-5 mb-5 p-md-5" style={{background: 'green', borderRadius: '50px', opacity: '.9'}}>
@@ -123,7 +126,8 @@ export class HomePage extends React.Component<HomePageProps, {}> {
                         <blockquote style={{color: 'black', borderRadius: '50px'}}>"I have worked super hard to get where I am in my career, and I continue to learn, focusing on ways to improve my skills."</blockquote> 
                     </Col>
                     <Col lg={6} className="mt-5 text-center"> 
-                        <img src="https://via.placeholder.com/435.png/000/fff C/O https://placeholder.com/ " />
+                        <img src={upselon} width={435} height={435}/>
+                        {/* <img src="https://via.placeholder.com/435.png/000/fff C/O https://placeholder.com/ " /> */}
                     </Col>
                 </Row>
                 <Row className="mt-5 mb-5 p-md-5" style={{background: '#007bff', borderRadius: '50px', opacity: '.9'}}>
@@ -131,7 +135,7 @@ export class HomePage extends React.Component<HomePageProps, {}> {
                         <h2>Educated and Highly Trained</h2>
                     </Col>
                     <Col lg={6} className="mt-5 text-center"> 
-                        <img src="https://via.placeholder.com/435.png/000/fff C/O https://placeholder.com/ " />
+                    <img src={bs} width={435} height={435}/>
                     </Col>
                     <Col lg={6} className="mt-5 d-flex align-items-center"> 
                         <span>Brian holds a Bachelor degree in computer science with a minor in informatics from Eastern Kentucky University.</span>
