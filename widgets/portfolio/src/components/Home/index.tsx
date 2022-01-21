@@ -12,6 +12,13 @@ import superman from '../../images/superhero.jpg';
 import { Roll, Flip, Fade, Zoom, Bounce, Rubberband } from 'react-reveal';
 
 import { Container, Row, Col } from 'react-bootstrap';
+import BusinessSharpIcon from '@material-ui/icons/BusinessSharp';
+import ClearSharpIcon from '@material-ui/icons/ClearSharp';
+import HighlightOffSharpIcon from '@material-ui/icons/HighlightOffSharp';
+
+import upselon from '../../images/upselon.jpg';
+import bs from '../../images/bs.jpg';
+
 export class HomePage extends React.Component<HomePageProps, {}> {
     constructor(props: HomePageProps) {
         super(props)
@@ -20,7 +27,7 @@ export class HomePage extends React.Component<HomePageProps, {}> {
     render() {
         return (
             <Container>
-                <Row className="mb-5 mt-5 d-flex align-items-center" >
+                <Row className="mb-5 mt-5 p-md-5 d-flex align-items-center" >
                     <Col lg={6} className="text-center mt-5 mb-5" id="home-page">
                         
                         <div className="hero-container pt-5" id="">
@@ -116,7 +123,7 @@ export class HomePage extends React.Component<HomePageProps, {}> {
                         </Fade>
                     </Col>
                 </Row>
-                <Row className="mt-5 mb-5">
+                <Row className="mt-5 mb-5 p-md-5" style={{background: '#007bff', borderRadius: '50px', opacity: '.9'}}>
                     <Col xs={12} className="text-center ">
                         <h2><Roll bottom cascade>Educated and Highly Trained</Roll></h2>
                     </Col>
