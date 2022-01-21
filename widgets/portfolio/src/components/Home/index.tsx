@@ -6,6 +6,8 @@ import { Contact } from '../Contact';
 import { ChatBot } from '../Chatbot';
 import moneyman from '../../images/holding-money.jpg';
 import heartRobot from '../../images/happy.jpg';
+import handyman from '../../images/under-construction.jpg';
+import superman from '../../images/superhero.jpg';
 
 import { Roll, Flip, Fade, Zoom, Bounce, Rubberband } from 'react-reveal';
 
@@ -21,13 +23,12 @@ export class HomePage extends React.Component<HomePageProps, {}> {
                 <Row className="mb-5 mt-5 d-flex align-items-center" >
                     <Col lg={6} className="text-center mt-5 mb-5" id="home-page">
                         
-                        <div className="hero-container" id="">
+                        <div className="hero-container pt-5" id="">
                             
                                 <picture className="hero-img mb-5">
                                     <source media="..." srcSet={this.props.imgSrc} />
                                     <Zoom top>
-                                        <img className="rounded-circle border-white mb-3" src={this.props.imgSrc} alt="Brian Kilburn" width='250'
-                                            height='250' />
+                                        <img className="rounded-circle border-white mb-3" src={this.props.imgSrc} alt="Brian Kilburn" width='255' />
                                     </Zoom>
                                 </picture>
                             
@@ -53,6 +54,7 @@ export class HomePage extends React.Component<HomePageProps, {}> {
                     <Col lg={6} className="text-center ">
                         <h1 className="title white d-inline-flex"><Roll right cascade>{this.props.title}</Roll><span className="d-none d-sm-block ml-2 mr-2"></span></h1>
                         <h2 className="text-center "><Flip bottom>Full Stack Engineer</Flip></h2>
+                        <a className="text-white git-profile" href="https://github.com/knight-coder-llc">https://github.com/knight-coder-llc</a>
                     </Col>
                 </Row>
                
@@ -109,7 +111,8 @@ export class HomePage extends React.Component<HomePageProps, {}> {
                     </Col>
                     <Col lg={6} className="mt-5 text-center"> 
                         <Fade right>
-                            <img src="https://via.placeholder.com/435.png/000/fff C/O https://placeholder.com/ " />
+                            {/* <img src="https://via.placeholder.com/435.png/000/fff C/O https://placeholder.com/ " /> */}
+                            <img src={handyman} width={225} />
                         </Fade>
                     </Col>
                 </Row>
@@ -119,7 +122,8 @@ export class HomePage extends React.Component<HomePageProps, {}> {
                     </Col>
                     <Col lg={6} className="mt-5 text-center"> 
                         <Fade left>
-                            <img src="https://via.placeholder.com/435.png/000/fff C/O https://placeholder.com/ " />
+                            {/* <img src="https://via.placeholder.com/435.png/000/fff C/O https://placeholder.com/ " /> */}
+                            <img src={superman} width={225} />
                         </Fade>
                     </Col>
                     <Col lg={6} className="mt-5"> 
