@@ -11,8 +11,8 @@ h1 { color: white;}
     /* background: white; */
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 1);
     padding: 10px;
-    animation: pulse-white 2s infinite;
-    animation-iteration-count: .5;
+    /* animation: pulse-white 2s infinite;
+    animation-iteration-count: .5; */
 }
 .hero-container h2 {color:white;}
 #home-page p {
