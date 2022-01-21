@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { IsoLayout } from '../IsoLayout';
 import { ProfileSlider } from '../Carousel';
 import { HomePageProps } from './interface';
 import { Contact } from '../Contact';

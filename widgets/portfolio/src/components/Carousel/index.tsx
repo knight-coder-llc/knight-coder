@@ -10,7 +10,7 @@ export class ProfileSlider extends React.Component<CarouselProps, {}> {
         const settings = {
             className: "center mb-5",
             dots: false,
-            autoplay: true,
+            // autoplay: true,
             infinite: true,
             speed: 1000,
             slidesToShow: 3,
@@ -48,6 +48,10 @@ export class ProfileSlider extends React.Component<CarouselProps, {}> {
             <div >
                 <h2 className="mb-3 mt-4"></h2>
                 <Slider {...settings} >
+                    <div className="mb-sm-3">
+                        <h3><a className="text-white" href="https://johnnie-max.com/">Johnnie Max</a></h3>
+                        <img className="mx-auto img-responsive" src="../../src/images/jmax.png" width={375} height={100}/>
+                    </div>
                     <div className="mb-sm-3">
                         <h3><a className="text-white" href="https://react.semantic-ui.com/">Semantic UI React</a></h3>
                         <img className="mx-auto img-responsive" src="../../src/images/semantic-ui-logo.png" width={150} height={150}/>

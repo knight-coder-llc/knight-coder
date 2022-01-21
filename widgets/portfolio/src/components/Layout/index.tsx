@@ -3,6 +3,7 @@ import { LayoutProps } from './interface';
 import { Header } from '../Header';
 import { Navigator } from '../Navigation';
 import { Footer } from '../Navigation/footer';
+import { Iso } from '@material-ui/icons';
 
 export class Layout extends React.Component<LayoutProps, {}> {
     constructor(props: any) {
