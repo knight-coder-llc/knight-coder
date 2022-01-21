@@ -124,7 +124,8 @@ export class HomePage extends React.Component<HomePageProps, {}> {
                         </Fade>
                     </Col>
                 </Row>
-                <Row className="mt-5 mb-5 p-md-5" style={{background: '#007bff', borderRadius: '50px', opacity: '.9'}}>
+                {/* <Row className="mt-5 mb-5 p-md-5" style={{background: '#007bff', borderRadius: '50px', opacity: '.9'}}> */}
+                <Row className="mt-5 mb-5">
                     <Col xs={12} className="text-center ">
                         <h2><Roll bottom cascade>Educated and Highly Trained</Roll></h2>
                     </Col>
