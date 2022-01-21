@@ -8,6 +8,7 @@ import moneyman from '../../images/holding-money.jpg';
 import heartRobot from '../../images/happy.jpg';
 import handyman from '../../images/under-construction.jpg';
 import superman from '../../images/superhero.jpg';
+import brian from '../../images/brian1.jpg';
 
 import { Roll, Flip, Fade, Zoom, Bounce, Rubberband } from 'react-reveal';
 
@@ -33,9 +34,9 @@ export class HomePage extends React.Component<HomePageProps, {}> {
                         <div className="hero-container pt-5" id="">
                             
                                 <picture className="hero-img mb-5">
-                                    <source media="..." srcSet={this.props.imgSrc} />
+                                    <source media="..." srcSet={brian} />
                                     <Zoom top>
-                                        <img className="rounded-circle border-white mb-3" src={this.props.imgSrc} alt="Brian Kilburn" width='255' />
+                                        <img className="rounded-circle border-white mb-3" src={brian} alt="Brian Kilburn" width='255' />
                                     </Zoom>
                                 </picture>
                             
